@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #dbceba;
+}
+
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container{
+    width: 900px;
+    height: 525px;
+    border-style: solid;
+    border-width: 5px;
+    background-color: #fde6ca;
+    border-color:#ffae00;
+    border-radius: 20px;
+    position: relative;
+}
+
+.element-main-page{
+    margin-left: 10px;
+    margin-top:13px;
+    width: 435px;
+    height: 155px;
+    border-style: solid;
+    border-width: 5px;
+    background-color: #fde6ca;
+    border-color:#ffae00;   
+    border-radius: 20px;
+    position: relative;
+}
+
+.logo-container{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 20;
+}
+
+.bank-logo {
+    width: 150px;      
+    height: auto;       
+}
+
+.name-balance{
+    display: block;
+    font-size: 40px;
+    color: #2c3e50;
+    text-align: center;
+    padding-top: 15px;
+}

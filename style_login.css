@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    background-image: url("light-colour-pictures-3dlvawvp9b3zzln1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
+
+.login-page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container{
+    width: 600px;
+    min-height: 350px;
+    border-style: solid;
+    border-width: 5px;
+    background-color: #facc94;
+    border-color:#ffae00;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    
+    /* --- ИЗМЕНЕНИЯ ЗДЕСЬ --- */
+    display: flex;
+    flex-direction: column; /* 1. Указываем, что элементы должны располагаться вертикально */
+    
+    justify-content: center; /* 2. Центрируем вертикальный стопку элементов по центру контейнера */
+    align-items: center; /* 3. Центрируем каждый элемент горизонтально */
+}
+
+.login-button, .reg-button, .forgot-passwd-button{
+    display: block;
+    width: 60%;
+    margin: 5px auto 0 auto; /* 20px сверху, авто по бокам (центрирование) */
+    font-size: 40px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 3px;
+    padding-bottom: 5px;
+    color: #fff8d1;
+    border-color: #f8b25d;
+    background-color: #fabb6f;
+}
+
+.forgot-passwd-button{
+    font-size: 12px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 7px 0 0 auto;
+    border-width: 0px;
+    color: #2c3e50;
+}
+
+.reg-button{
+    font-size: 24px;
+    width: 50%;
+    margin: 5px auto 0 auto; 
+    border-radius: 12px;
+}
+
+
+.login-button:hover, .reg-button:hover, .forgot-passwd-button:hover{
+    background-color: #f7b464;
+    border-color: #d49100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.login-button:active, .reg-button:active, .forgot-passwd-button:active{
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.login-input, .password-input{
+    font-size: 25px;
+    width: 100%;
+    margin-top: 5%;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-radius: 10px;
+    border-color: #fff1e3;
+    background-color: #fff1e3;
+    padding: 5px;
+}
+
+.login-input:focus, .password-input:focus{
+  border-radius: 0px;
+}
+
+.password-input{
+    padding-right: 50px;
+}
+
+:focus::placeholder {
+  color: transparent;
+}
+
+.form-group{
+    display:flex;
+    align-items: center;
+    width: 100%;
+}
+
+.login-form-text{
+    font-size: 40px;
+    margin-top: 7px;
+    color: #2c3e50;
+    margin-right: 15px;
+}
+
+.login-form{
+    position: initial;
+    top: initial;      /* Сдвинуть центр формы на 50% вниз */
+    left: initial;
+    transform: none;
+
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.login-text{
+    font-size: 48px;
+    color: #2c3e50;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.copyright{
+    font-size: 24px;
+    color: #2c3e50;
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.input-wrapper{
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    margin-top: 7px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 5;
+}
+
+.logo-container{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 20;
+}
+
+.bank-logo {
+    width: 150px;      
+    height: auto;       
+}
+
+#error-message {
+    color: #cc0000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px; 
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 15px;
+    transition: height 0.3s ease-out; 
+}
+
+.show-error {
+    height: 50px !important;
+}
