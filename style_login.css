@@ -55,6 +55,7 @@ body{
 
 .forgot-passwd-button{
     font-size: 12px;
+    padding-bottom: 0px;
     border-radius: 10px;
     width: 30%;
     margin: 7px 0 0 auto;
